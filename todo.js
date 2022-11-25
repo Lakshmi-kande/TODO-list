@@ -48,20 +48,20 @@ class item {
     }
 }
 
-function check() {
+function checkitem() {
     if(input.value != "") {
         new item(input.value);
         input.value = "";
     }
 }
 
-// addButton.addEventListener('click', check);
+// addButton.addEventListener('click', checkitem);
 
 
 
-addButton.addEventListener('click', check);
+addButton.addEventListener('click', checkitem);
 window.addEventListener('keydown', (event) => {
     if(event.which === 13) {
-        check();
+        checkitem();
     }
 }); 
